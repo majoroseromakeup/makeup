@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bonita</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+<!--	<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #FFFFFF;">-->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFFFFF">
+
+                <%= link_to "inicio" do %>
+                    <img src="logomajo1.png", class="img-responsive img-hover" alt="">
+                <% end %>
+
+
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    	     <span class="navbar-toggler-icon"></span>
+  		</button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mx-auto">
+	      <li class="nav-item mr-md-5">
+	        <a class="nav-link" href="/inicio">Inicio <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item mr-md-5">
+	        <a class="nav-link" href="/sobremi">Sobre Mi</a>
+	      </li>
+	      <li class="nav-item mr-md-5">
+	        <a class="nav-link" href="/cursos">Cursos</a>
+	      </li>
+	      <li class="nav-item mr-md-5">
+	        <a class="nav-link" href="/servicios">Servicios</a>
+	      </li>
+	      <li class="nav-item mr-md-5">
+	        <a class="nav-link" href="/portafolio">Portafolio</a>
+	      </li>
+	      <li class="nav-item mr-md-5">
+	        <a class="nav-link" href="/contacto">Contacto</a>
+	      </li>
+	    </ul>
+	  </div>
+  </nav>
+
+
+<!-- Navigation
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+-->
+
+
+
+
+ <%= yield %>
+
+ <p></p> 
+
+
+<div class="container-fluid p-3 mb-2 bg-dark text-white">
+
+
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row" background-color: black;>
+                    
+                     <div class="footer-col col-md-4">
+                        <br>
+                        <h5 class="text-uppercase font-weight-bold">Contacto</h5>
+                          <a class="ins-ic" >
+                            <i class="fa fa-phone fa-lg white-text fa-2x"></i>
+                            (+593)958878313
+                          </a>
+                    </div>
+
+
+                    <div class="footer-col col-md-4">
+                      <!-- Facebook -->
+                      <a href="https://www.facebook.com/majoroseromakeup/" class= "fb-ic">
+                        <br>
+                        <i class="fa fa-facebook-square fa-lg white-text fa-inverse fa-3x"> </i>
+                      </a>
+                      <!-- 
+                      <a href="https://www.facebook.com/majoroseromakeup/" class="btn-social btn-outline">
+                      <i class="fa fa-facebook-square fa-stack-2x fa-inverse"></i>
+                      </a>
+                      -->
+
+                      <br>
+                      <br>
+                      Guayaquil-Ecuador
+                    </div>
+                    
+
+                    <div class="footer-col col-md-4">
+                      <!--Instagram-->
+                      <a href="https://www.instagram.com/majoroseromakeup/?hl=es-la" class="ins-ic">
+                        <br>
+                        <i class="fa fa-instagram fa-lg white-text fa-inverse fa-3x"> </i>
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+        <div class="footer-below" >
+            <div class="container" >
+                <div class="row" >
+                    <div class="col-lg-12" >
+                        Copyright &copy; MajoRoseroMakeUp 2018. Todos los derechos reservados
+                        <p>Design by CS  </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+  </body>
+</html>

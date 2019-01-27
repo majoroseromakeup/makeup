@@ -1,0 +1,110 @@
+
+
+<%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+
+<!--Section: Contact v.2-->
+<section class="container mb-4">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contáctenos</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Tienes alguna pregunta? No dudes en contactarnos directamente. Te responderemos en cuestión de horas.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                             <div class="control-group form-group">
+                                 <div class="controls">
+                                  <%= f.input :name, label: 'Nombre:', :required => true, input_html: { class: 'form-control' } %>
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                             <div class="control-group form-group">
+                                 <div class="controls">
+                                 <%= f.input :number, label: 'Celular:', input_html: { class: 'form-control' } , :required => true %></div>
+                             </div>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                             <div class="control-group form-group">
+                                <div class="controls">
+                                 <%= f.input :email, label: 'Email:', input_html: { class: 'form-control' } , :required => true %>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <%= f.input :message, label: 'Mensaje:', input_html: { class: 'form-control' } , :as => :text, :required => true %>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <%= f.button :submit, 'Enviar Mensaje', :class=> "btn btn-primary" %>
+            </div>
+            <div class="status"></div>
+        </div>
+
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fa fa-map-marker fa-2x"></i>
+                    <p>La Garzota , Guayaquil</p>
+                </li>
+
+                <li><i class="fa fa-phone mt-4 fa-2x"></i>
+                    <p>(+593)958878313</p>
+                </li>
+
+                <li><i class="fa fa-envelope mt-4 fa-2x"></i>
+                    <p>info@majorosero.com</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
+
+<% end %>
