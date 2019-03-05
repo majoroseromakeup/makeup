@@ -36,7 +36,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'bootstrap', '~> 4.3.3'
+gem 'bootstrap', '~> 4.3.1'
 gem "font-awesome-rails"
 
 gem 'magnific-popup-rails', '~> 1.1'
