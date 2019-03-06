@@ -14,7 +14,7 @@ gem 'rails', '~> 5.0.7'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
-#gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -67,6 +67,7 @@ gem 'sqlite3', '~> 1.3.13'
 end
 
 group :production do 
+	gem 'pg'
 	gem 'rails_12factor'
 end
 
