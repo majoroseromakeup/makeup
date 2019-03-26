@@ -48,6 +48,7 @@ gem 'meta-tags'
 gem 'figaro'
 
 gem 'less-rails'
+gem 'therubyracer'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
