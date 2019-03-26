@@ -1,10 +1,11 @@
 development:
- adapter: mysql2
- encoding: utf8
- database: my_app_development
- pool: 5
- username: root
- password:
+
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000
+
+
 
 test:
   adapter: sqlite3
