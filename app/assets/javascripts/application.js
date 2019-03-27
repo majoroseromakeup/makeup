@@ -17,6 +17,6 @@
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
-
+//= require twitter/bootstrap
 
 //= require magnific-popup
