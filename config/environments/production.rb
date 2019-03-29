@@ -26,15 +26,6 @@ Rails.application.configure do
   config.assets.compile = true
 
 
-config.public_file_server.enabled = true
-
-config.cache_classes = true
-config.serve_static_files = true
-config.assets.compile = true
-config.assets.digest = true
-
-config.assets.precompile = ['.js', '.css', '*.css.erb']
-
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 

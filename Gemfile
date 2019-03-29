@@ -45,6 +45,8 @@ gem 'mail_form'
 gem 'simple_form'
 gem 'meta-tags'
 
+gem 'sprockets-rails', :require => 'sprockets/railtie'
+
 gem 'figaro'
 
 group :development, :test do
